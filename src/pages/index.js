@@ -11,6 +11,7 @@ export default function Home({ noticias }) {
   return <>
     <Container>
       <Row xs={1} md={3}>
+    
         {Array.isArray(noticias) ?
           noticias.map(noticia => (
             <Cards idnoticia={noticia._id}
@@ -24,4 +25,3 @@ export default function Home({ noticias }) {
     </Container>
   </>
 }
-// src/pages/index.js
